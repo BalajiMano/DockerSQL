@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "0+SEd10dUGM14t1KPQj9m6J54V/snBnjM4IdOizhjMA=",
+  "Source": "DockerSQL",
+  "BasePath": "_content/DockerSQL",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
