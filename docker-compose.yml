@@ -9,7 +9,7 @@ services:
     TrustedCertificate : "True"
    ports:
     - "1433:1433"
-  docker-api:
-   build: .
+  dockerWeb-api:
+   image: balajimano91/dockersql
    ports: 
     - "8080:8080"

@@ -135,3 +135,4 @@ C:\Balaji\Personal\Projects\.NetCore\DockerSQL\obj\Debug\net8.0\refint\DockerSQL
 C:\Balaji\Personal\Projects\.NetCore\DockerSQL\obj\Debug\net8.0\DockerSQL.pdb
 C:\Balaji\Personal\Projects\.NetCore\DockerSQL\obj\Debug\net8.0\DockerSQL.genruntimeconfig.cache
 C:\Balaji\Personal\Projects\.NetCore\DockerSQL\obj\Debug\net8.0\ref\DockerSQL.dll
+C:\Balaji\Personal\Projects\.NetCore\DockerSQL\obj\Debug\net8.0\DockerSQL.sourcelink.json

@@ -3,7 +3,7 @@ using DockerSQL.Models;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
-var server =builder.Configuration["DBServer"]?? "ms-sql-server";
+var server =builder.Configuration["DBServer"]?? "localhost";
 var port =builder.Configuration["DBPort"]?? "1433";
 var user =builder.Configuration["DBUser"]?? "SA";
 var password =builder.Configuration["DBPassword"]?? "P@ssw0rd";
