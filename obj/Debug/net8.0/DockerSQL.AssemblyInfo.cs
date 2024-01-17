@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DockerSQL")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+372596bce0ee9a0aec9db1e4fef624e10093bf95")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
 [assembly: System.Reflection.AssemblyProductAttribute("DockerSQL")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DockerSQL")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
