@@ -10,6 +10,6 @@ services:
    ports:
     - "1433:1433"
   dockerWeb-api:
-   image: balajimano91/dockersql
+   image: balajimano91/dockersqlv1
    ports: 
     - "8080:8080"

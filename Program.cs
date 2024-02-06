@@ -1,11 +1,12 @@
 using Dockersql.Models;
 using DockerSQL.Models;
+using DockerSQL.Service;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 var server =builder.Configuration["DBServer"]?? "localhost";
 var port =builder.Configuration["DBPort"]?? "1433";
-var user =builder.Configuration["DBUser"]?? "SA";
+var user =builder.Configuration["DBUser"]?? "APIUser";
 var password =builder.Configuration["DBPassword"]?? "P@ssw0rd";
 var database =builder.Configuration["DBDatabase"]?? "Colours";
 // Add services to the container.
@@ -13,9 +14,9 @@ var database =builder.Configuration["DBDatabase"]?? "Colours";
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddControllers();
-
+builder.Services.AddScoped<IServices,StreamingService>();
 builder.Services.AddDbContext<ColourContext>(
-    opt=>opt.UseSqlServer($"Server={server},{port};Initial Catalog={database};User ID={user};Password={password};TrustServerCertificate=True"));
+    opt=>opt.UseSqlServer($"Server={server};Initial Catalog={database};User ID={user};Password={password};TrustServerCertificate=True"));
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Yu9Ez/uGk7A8Dh961PfMWIrFrSt2C1xv+TPzwczvjOanbkORpZAPnIQnFxudXG4iLEryqw6E9qzmH731sEAZDQ==",
+  "dgSpecHash": "ic39LuZNFTnfOYoSe4NzlLyvRSFaCKsBt7oHgnB1QYNvAFQkGYhfxkYL2Grwbum9GWqFV8wiEdE4FmVyliRzQg==",
   "success": true,
-  "projectFilePath": "c:\\Balaji\\Personal\\Projects\\.NetCore\\DockerSQL\\DockerSQL.csproj",
+  "projectFilePath": "C:\\Balaji\\Personal\\Projects\\.NetCore\\DockerSQL\\DockerSQL.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\balaji.manoharan\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\balaji.manoharan\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",

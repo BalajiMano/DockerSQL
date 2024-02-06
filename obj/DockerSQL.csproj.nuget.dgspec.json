@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Balaji\\Personal\\Projects\\.NetCore\\DockerSQL\\DockerSQL.csproj": {}
+    "C:\\Balaji\\Personal\\Projects\\.NetCore\\DockerSQL\\DockerSQL.csproj": {}
   },
   "projects": {
-    "c:\\Balaji\\Personal\\Projects\\.NetCore\\DockerSQL\\DockerSQL.csproj": {
+    "C:\\Balaji\\Personal\\Projects\\.NetCore\\DockerSQL\\DockerSQL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Balaji\\Personal\\Projects\\.NetCore\\DockerSQL\\DockerSQL.csproj",
+        "projectUniqueName": "C:\\Balaji\\Personal\\Projects\\.NetCore\\DockerSQL\\DockerSQL.csproj",
         "projectName": "DockerSQL",
-        "projectPath": "c:\\Balaji\\Personal\\Projects\\.NetCore\\DockerSQL\\DockerSQL.csproj",
+        "projectPath": "C:\\Balaji\\Personal\\Projects\\.NetCore\\DockerSQL\\DockerSQL.csproj",
         "packagesPath": "C:\\Users\\balaji.manoharan\\.nuget\\packages\\",
-        "outputPath": "c:\\Balaji\\Personal\\Projects\\.NetCore\\DockerSQL\\obj\\",
+        "outputPath": "C:\\Balaji\\Personal\\Projects\\.NetCore\\DockerSQL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
