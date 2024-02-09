@@ -2,6 +2,7 @@ using System.Reflection.Metadata.Ecma335;
 using Dockersql.Models;
 using DockerSQL.Service;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace DockerSQL.Models
 {
@@ -27,10 +28,16 @@ namespace DockerSQL.Models
             //   if(_colours.Any()) return Ok(_colours.Count());
             //   return Ok(0);
 
-          //  return Ok(GetColor());
-Console.WriteLine("Before GetColor Execution");
-            var _colours = GetColor().Where(col=>col.ColourName=="RED");
+            //  return Ok(GetColor());
+            Console.WriteLine("Before GetColor Execution");
+            var _colours = GetColor().Select(Col=> new {Name=Col.ColourName, 
+                                                   Cid=Col.id}
+                                                   ); //.Where(col => col.ColourName == "RED");
             Console.WriteLine("After GetColor Executed");
+            foreach( var col in _colours)
+            {
+                Console.WriteLine($"{col}");
+            }
             if (_colours.Any())
             {
                 //   return Ok(0);
@@ -59,9 +66,12 @@ Console.WriteLine("Before GetColor Execution");
 
         }
 
-        public IQueryable<Colour> GetColor()
+        public IEnumerable<Colour> GetColor()
         {
-            return _context.ColourItems;
+            
+            var collist= _context.ColourItems.AsNoTracking();
+            Console.WriteLine($"Inside GetColor");
+            return collist;
         }
 
         // [HttpGet]

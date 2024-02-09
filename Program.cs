@@ -1,6 +1,7 @@
 using Dockersql.Models;
 using DockerSQL.Models;
 using DockerSQL.Service;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -45,9 +46,16 @@ app.MapGet("/weatherforecast", () =>
         ))
         .ToArray();
     return forecast;
-})
-.WithName("GetWeatherForecast")
+}).WithName("GetWeatherForecast")
 .WithOpenApi();
+
+app.MapGet("/users/{CName:int}",(int CName,HttpContext context)=>{
+    Console.WriteLine($"Query String value is {context.Request.QueryString.Value.ToString()}");
+  
+    return $"CountryCode is {CName} ";
+    });
+
+
 
 app.Run();
 
